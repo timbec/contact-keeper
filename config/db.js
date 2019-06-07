@@ -11,11 +11,11 @@ const connectDB = async () => {
             userCreateIndex: true, 
             useFindAndModify: false
         });
-        console.log('MongoDB Connected'))
+        console.log('MongoDB Connected')
     } catch(err) {
         console.log(err.message); 
         process.exit(1)
-    });
+    };
 }; 
 
 module.exports = connectDB; 
